@@ -12,21 +12,25 @@
 
 ## 🎨 Installation
 
+Clone the repository and run the install script. It will copy all themes to your Yazi flavors directory and prompt you to select one to enable.
+
+**macOS / Linux:**
 
 ```sh
-ya pkg add "ZacharyEggert/monokai-pro-ristretto:Monokai Pro (Filter Ristretto)"
+git clone https://github.com/ZacharyEggert/monokai-pro-ristretto.yazi.git
+cd monokai-pro-ristretto.yazi
+bash install.sh
 ```
 
-## ⚙️ Usage
+**Windows (PowerShell):**
 
-Add it to your `theme.toml` as dark flavor:
-
-```toml
-[flavor]
-dark = "monokai"
+```powershell
+git clone https://github.com/ZacharyEggert/monokai-pro-ristretto.yazi.git
+cd monokai-pro-ristretto.yazi
+.\install.ps1
 ```
 
-Make sure your `theme.toml` doesn't contain anything other than `[flavor]`, unless you want to override certain styles of this flavor.
+The script will write your selection to `theme.toml` automatically.
 
 See the [Yazi flavor documentation](https://yazi-rs.github.io/docs/flavors/overview) for more details.
 
