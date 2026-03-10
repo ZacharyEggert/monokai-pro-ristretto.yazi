@@ -8,7 +8,7 @@
 
 ## 👀 Preview
 
-<img src="./Monokai Pro/preview.png" width="600" />
+<img src="./monokai-pro.yazi/preview.png" width="600" />
 
 ## 🎨 Installation
 
