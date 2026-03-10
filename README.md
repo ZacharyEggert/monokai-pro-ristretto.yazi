@@ -8,13 +8,13 @@
 
 ## 👀 Preview
 
-<img src="preview.png" width="600" />
+<img src="./Monokai Pro/preview.png" width="600" />
 
 ## 🎨 Installation
 
 
 ```sh
-ya pkg add malick-tammal/monokai
+ya pkg add "ZacharyEggert/monokai-pro-ristretto:Monokai Pro (Filter Ristretto)"
 ```
 
 ## ⚙️ Usage

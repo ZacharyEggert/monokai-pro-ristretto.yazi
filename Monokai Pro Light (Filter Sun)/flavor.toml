@@ -1,0 +1,182 @@
+#----------------------------------------------------------
+#--  HACK: Monokai Pro Light (Filter Sun)
+#----------------------------------------------------------
+
+[mgr]
+cwd = { fg = "#2473B6" }
+
+# Hovered
+hovered = { reversed = true }
+preview_hovered = { underline = true }
+
+# Find
+find_symbol = " Finding: "
+find_keyword = { fg = "#CE4770", bold = true, italic = true, underline = true }
+find_position = { fg = "#6851A2", bg = "reset", bold = true, italic = true }
+
+# Symlink
+symlink_target = { fg = "#2473B6", italic = true }
+
+# Marker
+marker_copied = { fg = "#218871", bg = "#218871" }
+marker_cut = { fg = "lightred", bg = "lightred" }
+marker_marked = { fg = "#6851A2", bg = "#6851A2" }
+marker_selected = { fg = "#CE4770", bg = "#CE4770" }
+
+# Count
+count_copied = { fg = "#F8EFE7", bg = "#218871" }
+count_cut = { fg = "#F8EFE7", bg = "#CE4770" }
+count_selected = { fg = "#F8EFE7", bg = "#B16803" }
+
+# Border
+border_symbol = "│"
+border_style = { fg = "#BEB5B3" }
+
+# Tabs
+[tabs]
+active = { fg = "#F8EFE7", bg = "#B16803", bold = true }
+inactive = { fg = "#B16803", bg = "#F8EFE7" }
+
+# Separator
+sep_inner = { open = "", close = "" }
+sep_outer = { open = "", close = "" }
+
+# Modes
+[mode]
+# Normal mode
+normal_main = { fg = "#F8EFE7", bg = "#B16803", bold = true }
+normal_alt = { fg = "#B16803", bg = "#FDF7F3" }
+
+# Select mode
+select_main = { fg = "#F8EFE7", bg = "#6851A2", bold = true }
+select_alt = { fg = "#6851A2", bg = "#FDF7F3" }
+
+# Unset mode
+unset_main = { bg = "#CE4770", bold = true }
+unset_alt = { fg = "#CE4770", bg = "gray" }
+
+# Status bar
+[status]
+overall = {}
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+
+# Permissions
+perm_sep = { fg = "#BEB5B3" }
+perm_type = { fg = "#218871" }
+perm_read = { fg = "#B16803" }
+perm_write = { fg = "#CE4770" }
+perm_exec = { fg = "#2473B6" }
+
+# Progress
+progress_label = { bold = true }
+progress_normal = { fg = "#2473B6", bg = "#F8EFE7" }
+progress_error = { fg = "#CE4770", bg = "#F8EFE7" }
+
+# Which
+[which]
+cols = 3
+mask = { bg = "#F8EFE7" }
+cand = { fg = "lightcyan" }
+rest = { fg = "#BEB5B3" }
+desc = { fg = "lightmagenta" }
+separator = "  "
+separator_style = { fg = "#BEB5B3" }
+
+# Confirmation
+[confirm]
+border = { fg = "#B16803" }
+title = { fg = "#B16803" }
+content = {}
+list = {}
+btn_yes = { reversed = true }
+btn_no = {}
+btn_labels = ["  [Y]es  ", "  (N)o  "]
+
+# Spotter
+[spot]
+border = { fg = "#2473B6" }
+title = { fg = "#2473B6" }
+
+# Table
+tbl_col = { fg = "#2473B6" }
+tbl_cell = { fg = "#B16803", reversed = true }
+
+# Norifications
+[notify]
+title_info = { fg = "#218871" }
+title_warn = { fg = "#B16803" }
+title_error = { fg = "#CE4770" }
+
+# Icons
+icon_info = ""
+icon_warn = ""
+icon_error = ""
+
+# Picker
+[pick]
+border = { fg = "#2473B6" }
+active = { fg = "#6851A2", bold = true }
+inactive = {}
+
+# Input
+[input]
+border = { fg = "#2473B6" }
+title = {}
+value = {}
+selected = { reversed = true }
+
+# Completion
+[cmp]
+border = { fg = "#2473B6" }
+active = { reversed = true }
+inactive = {}
+
+# Icons
+icon_file = ""
+icon_folder = ""
+icon_command = ""
+
+# : Task manager {{
+[tasks]
+border = { fg = "#2473B6" }
+title = {}
+hovered = { fg = "#6851A2", underline = true }
+
+# Help menu
+[help]
+on = { fg = "#2473B6" }
+run = { fg = "#6851A2" }
+desc = {}
+hovered = { reversed = true, bold = true }
+footer = { fg = "#F8EFE7", bg = "#2C232E" }
+
+# File-specific styles
+[filetype]
+rules = [
+  # Images
+  { mime = "image/*", fg = "#B16803" },
+
+  # Media
+  { mime = "{audio,video}/*", fg = "#218871" },
+
+  # Archives
+  { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#CE4770" },
+
+  # Documents
+  { mime = "application/{pdf,doc,rtf}", fg = "#2473B6" },
+
+  # Empty files
+  { mime = "inode/empty", fg = "#CE4770" },
+
+  # Special files
+  { url = "*", is = "orphan", bg = "#CE4770" },
+  { url = "*", is = "exec", fg = "#218871" },
+
+  # Dummy files
+  { url = "*", is = "dummy", bg = "#CE4770" },
+  { url = "*/", is = "dummy", bg = "#CE4770" },
+
+  # Fallback
+  { url = "*/", fg = "#D4572B", bold = true },
+]
